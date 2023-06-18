@@ -9,6 +9,9 @@ public class Pizzas {
     private boolean sinGluten;
     private int recojida;
 
+    private boolean jamon;
+    private boolean bacon;
+    private boolean pinha;
 
     // tipo de masa
     public static final int FINA = 0;
@@ -30,7 +33,12 @@ public class Pizzas {
         this.sinGluten = false;
         this.size = MEDIUM;
         this.tipoMasa = FINA;
+        this.jamon= true;
+        this.bacon= true;
+        this.pinha = false;
     }
+
+
 
     /**
      * Constructor con todoa los parametros
@@ -40,14 +48,20 @@ public class Pizzas {
      * @param cebolla lleva o no lleva
      * @param sinGluten para celíacos
      * @param recojida como lo va a recoger el cliente
+     * @param jamon lleva o no lleva
+     * @param bacon lleva o no lleva
+     * @param pinha lleva o no lleva
      */
-    public Pizzas(int tipoMasa, int size, boolean rellena, boolean cebolla, boolean sinGluten, int recojida) {
+    public Pizzas(int tipoMasa, int size, boolean rellena, boolean cebolla, boolean sinGluten, int recojida, boolean jamon, boolean bacon, boolean pinha) {
         this.tipoMasa = tipoMasa;
         this.size = size;
         this.rellena = rellena;
         this.cebolla = cebolla;
         this.sinGluten = sinGluten;
         this.recojida = recojida;
+        this.jamon = jamon;
+        this.bacon = bacon;
+        this.pinha = pinha;
     }
 
     public int getTipoMasa() {
@@ -96,5 +110,26 @@ public class Pizzas {
 
     public void setRecojida(int recojida) {
         this.recojida = recojida;
+    }
+
+    public void setJamon(boolean jamon) {
+        this.jamon = jamon;
+    }
+    public boolean isJamon() {
+        return jamon;
+    }
+
+    public void setBacon(boolean bacon) {
+        this.bacon = bacon;
+    }
+    public boolean isBacon() {
+        return bacon;
+    }
+
+    public void setPinha(boolean pinha) {
+        this.pinha = pinha;
+    }
+    public boolean isPinha() {
+        return pinha;
     }
 }
