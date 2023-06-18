@@ -132,4 +132,19 @@ public class Pizzas {
     public boolean isPinha() {
         return pinha;
     }
+
+    @Override
+    public String toString() {
+        return "Pizzas{" +
+                "tipoMasa=" + tipoMasa +
+                ", size=" + size +
+                ", rellena=" + rellena +
+                ", cebolla=" + cebolla +
+                ", sinGluten=" + sinGluten +
+                ", recojida=" + recojida +
+                ", jamon=" + jamon +
+                ", bacon=" + bacon +
+                ", pinha=" + pinha +
+                '}';
+    }
 }
