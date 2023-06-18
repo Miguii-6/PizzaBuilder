@@ -46,4 +46,17 @@ public class BuilderPizzas {
         _pizza.setRecojida(recojida);
         return this;
     }
+
+    public BuilderPizzas setJamon(boolean jamon) {
+        _pizza.setJamon(jamon);
+        return this;
+    }
+    public BuilderPizzas setBacon(boolean bacon) {
+        _pizza.setBacon(bacon);
+        return this;
+    }
+    public BuilderPizzas setPinha(boolean pinha) {
+        _pizza.setPinha(pinha);
+        return this;
+    }
 }
