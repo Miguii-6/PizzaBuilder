@@ -9,6 +9,7 @@ public class Pizzas {
     private boolean sinGluten;
     private int recojida;
 
+
     // tipo de masa
     public static final int FINA = 0;
     public static final int PAN = 1;
